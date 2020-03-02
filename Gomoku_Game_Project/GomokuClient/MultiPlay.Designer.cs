@@ -41,9 +41,10 @@ namespace GomokuClient
             // Board
             // 
             this.Board.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.Board.Location = new System.Drawing.Point(37, 28);
+            this.Board.Location = new System.Drawing.Point(42, 35);
+            this.Board.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Board.Name = "Board";
-            this.Board.Size = new System.Drawing.Size(500, 500);
+            this.Board.Size = new System.Drawing.Size(571, 625);
             this.Board.TabIndex = 1;
             this.Board.TabStop = false;
             this.Board.Paint += new System.Windows.Forms.PaintEventHandler(this.Board_Paint);
@@ -55,9 +56,11 @@ namespace GomokuClient
             this.EnterButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EnterButton.Font = new System.Drawing.Font("휴먼옛체", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.EnterButton.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.EnterButton.Location = new System.Drawing.Point(679, 110);
+            this.EnterButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EnterButton.Location = new System.Drawing.Point(776, 138);
+            this.EnterButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EnterButton.Name = "EnterButton";
-            this.EnterButton.Size = new System.Drawing.Size(150, 60);
+            this.EnterButton.Size = new System.Drawing.Size(171, 75);
             this.EnterButton.TabIndex = 2;
             this.EnterButton.Text = "Enter";
             this.EnterButton.UseVisualStyleBackColor = false;
@@ -65,9 +68,10 @@ namespace GomokuClient
             // 
             // RoomTextBox
             // 
-            this.RoomTextBox.Location = new System.Drawing.Point(648, 71);
+            this.RoomTextBox.Location = new System.Drawing.Point(741, 89);
+            this.RoomTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RoomTextBox.Name = "RoomTextBox";
-            this.RoomTextBox.Size = new System.Drawing.Size(209, 21);
+            this.RoomTextBox.Size = new System.Drawing.Size(238, 25);
             this.RoomTextBox.TabIndex = 3;
             // 
             // PlayButton
@@ -76,9 +80,10 @@ namespace GomokuClient
             this.PlayButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PlayButton.Font = new System.Drawing.Font("휴먼옛체", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.PlayButton.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.PlayButton.Location = new System.Drawing.Point(679, 214);
+            this.PlayButton.Location = new System.Drawing.Point(776, 241);
+            this.PlayButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlayButton.Name = "PlayButton";
-            this.PlayButton.Size = new System.Drawing.Size(150, 60);
+            this.PlayButton.Size = new System.Drawing.Size(171, 75);
             this.PlayButton.TabIndex = 4;
             this.PlayButton.Text = "Play";
             this.PlayButton.UseVisualStyleBackColor = false;
@@ -86,26 +91,32 @@ namespace GomokuClient
             // 
             // Status
             // 
+            this.Status.BackColor = System.Drawing.Color.Transparent;
             this.Status.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Status.Location = new System.Drawing.Point(601, 28);
+            this.Status.ForeColor = System.Drawing.Color.White;
+            this.Status.Location = new System.Drawing.Point(687, 35);
             this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(300, 30);
+            this.Status.Size = new System.Drawing.Size(343, 38);
             this.Status.TabIndex = 5;
             this.Status.Text = "Create the Room to enter :)";
             this.Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MultiPlay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 561);
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::GomokuClient.Properties.Resources._522030_BW;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1075, 701);
             this.Controls.Add(this.Status);
             this.Controls.Add(this.PlayButton);
             this.Controls.Add(this.RoomTextBox);
             this.Controls.Add(this.EnterButton);
             this.Controls.Add(this.Board);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MultiPlay";
-            this.Text = "Form1";
+            this.Text = "Gomoku by B611083-MultiPlay";
             ((System.ComponentModel.ISupportInitialize)(this.Board)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
