@@ -1,6 +1,6 @@
 ﻿namespace GomokuClient
 {
-    partial class SinglePlay
+    partial class AIPlay
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             this.Board.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Board.Name = "Board";
             this.Board.Size = new System.Drawing.Size(571, 625);
-            this.Board.TabIndex = 0;
+            this.Board.TabIndex = 2;
             this.Board.TabStop = false;
             this.Board.Paint += new System.Windows.Forms.PaintEventHandler(this.Board_Paint);
             this.Board.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Board_MouseDown);
@@ -56,7 +56,7 @@
             this.PlayButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlayButton.Name = "PlayButton";
             this.PlayButton.Size = new System.Drawing.Size(171, 75);
-            this.PlayButton.TabIndex = 1;
+            this.PlayButton.TabIndex = 3;
             this.PlayButton.Text = "Play";
             this.PlayButton.UseVisualStyleBackColor = false;
             this.PlayButton.Click += new System.EventHandler(this.PlayButton_Click);
@@ -69,11 +69,11 @@
             this.Status.Location = new System.Drawing.Point(689, 35);
             this.Status.Name = "Status";
             this.Status.Size = new System.Drawing.Size(343, 38);
-            this.Status.TabIndex = 2;
+            this.Status.TabIndex = 4;
             this.Status.Text = "Press the Play button to start :)";
             this.Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SinglePlay
+            // AIPlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -84,8 +84,7 @@
             this.Controls.Add(this.Status);
             this.Controls.Add(this.PlayButton);
             this.Controls.Add(this.Board);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "SinglePlay";
+            this.Name = "AIPlay";
             this.Text = "Gomoku by B611083";
             ((System.ComponentModel.ISupportInitialize)(this.Board)).EndInit();
             this.ResumeLayout(false);

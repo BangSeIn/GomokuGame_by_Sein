@@ -44,5 +44,13 @@ namespace GomokuClient
             multiPlay.FormClosed += new FormClosedEventHandler(Back2_Menu);
             multiPlay.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            AIPlay aiPlay = new AIPlay();
+            aiPlay.FormClosed += new FormClosedEventHandler(Back2_Menu);
+            aiPlay.Show();
+        }
     }
 }

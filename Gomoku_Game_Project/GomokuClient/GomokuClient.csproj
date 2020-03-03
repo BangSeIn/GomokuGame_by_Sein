@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AIPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AIPlay.Designer.cs">
+      <DependentUpon>AIPlay.cs</DependentUpon>
+    </Compile>
     <Compile Include="MultiPlay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AIPlay.resx">
+      <DependentUpon>AIPlay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MultiPlay.resx">
       <DependentUpon>MultiPlay.cs</DependentUpon>
     </EmbeddedResource>

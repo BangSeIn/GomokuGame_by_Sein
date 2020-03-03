@@ -29,10 +29,11 @@ void Server::FullClient(Client* client) {
 void Server::PlayClient(int RoomID) {
 	char* sent = new char[256];
 	srand((unsigned int)time(NULL));
-	int SetBlack = rand();
+	int Setfirst = rand();
 	bool black = true;
 
-	if (SetBlack % 2 == 0) black = false;
+	//Set order randomly
+	if (Setfirst % 2 == 0) black = false;
 
 	for (int i = 0; i < Connections.size(); i++) {
 		if (Connections[i]->GetRoomID() == RoomID) {
